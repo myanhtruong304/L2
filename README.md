@@ -14,6 +14,7 @@ This is a simple FastAPI application that provides travel recommendations for a 
     ```
     git clone https://github.com/yourusername/travel-recommendations-api.git
     ```
+    
 2.  Setup env:
     ```
     python -m venv venv
@@ -21,27 +22,21 @@ This is a simple FastAPI application that provides travel recommendations for a 
     pip install -r requirements.txt
     OPENAI_API_KEY=your_openai_api_key
     ```
-3.  Run source:
+
+4.  Run source:
     ### If using docker:
-        ```
-    
         docker compose build
         docker compose up -d
-        ```
+        
     ### Using Makefile:
-        ```
-    
         make local-server
-        ```
-5.  Make your get request:
-    Curl:
-    ```
-    
-    curl -X 'GET' \
-    'http://localhost:3000/recommendations?country=vietnam&season=summer' \
-    -H 'accept: application/json'
-    ```
+        
+5.  Make your GET request:
+    ### Curl:
+        curl -X 'GET' \
+        'http://localhost:3000/recommendations?country=vietnam&season=summer' \
+        -H 'accept: application/json'
 
 
-  Or using swagger UI:
-  http://localhost:3000/docs
+   ### Or using swagger UI:
+        http://localhost:3000/docs
