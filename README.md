@@ -24,22 +24,24 @@ This is a simple FastAPI application that provides travel recommendations for a 
 3.  Run source:
     ### If using docker:
         ```
+    
         docker compose build
         docker compose up -d
         ```
     ### Using Makefile:
         ```
+    
         make local-server
         ```
-4.  Make your get request:
+5.  Make your get request:
     Curl:
     ```
+    
     curl -X 'GET' \
     'http://localhost:3000/recommendations?country=vietnam&season=summer' \
     -H 'accept: application/json'
     ```
 
-```
+
   Or using swagger UI:
   http://localhost:3000/docs
-```
