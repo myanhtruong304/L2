@@ -12,7 +12,7 @@ This is a simple FastAPI application that provides travel recommendations for a 
 
 1.  Clone the repository:
     ```
-    git clone https://github.com/yourusername/travel-recommendations-api.git
+    git clone https://github.com/myanhtruong304/l2.git
     ```
     
 2.  Setup env:
